@@ -30,7 +30,7 @@ describe RunLoop::Shasum do
       end
 
       it 'returns shasum for directories' do
-        expect(RunLoop::Shasum.shasum(path)).to be == '34cf6501e4933d8c838a6dd15245f19dde13cc1a'
+        expect(RunLoop::Shasum.shasum(path)).to be == 'c1ab478473b56ea00e5081567cd9974e4b1e01ae'
       end
     end
   end
