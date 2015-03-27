@@ -12,6 +12,7 @@ Gem::Specification.new do |s|
   s.summary     = %q{Tools related to running Calabash iOS tests}
   s.description = %q{calabash-cucumber drives tests for native iOS apps. RunLoop provides a number of tools associated with running Calabash tests.}
   s.files         = Dir.glob('{lib}/**/*') + Dir.glob('scripts/*.js') + ['scripts/udidetect', 'scripts/calabash.lldb.erb', 'scripts/read-cmd.sh', 'scripts/timeout3', 'LICENSE']
+  s.executables   = 'run-loop'
   s.require_paths = ["lib"]
   s.licenses    = ['MIT']
 
@@ -22,6 +23,7 @@ Gem::Specification.new do |s|
   s.add_dependency 'retriable', '>= 1.3.3.1', '< 2.1'
   s.add_dependency('awesome_print', '~> 1.2')
   s.add_dependency('CFPropertyList','~> 2.2')
+  s.add_dependency('thor', '>= 0.18.1', '< 1.0')
 
   s.add_development_dependency('bundler', '~> 1.6')
   s.add_development_dependency('travis', '~> 1.7')
